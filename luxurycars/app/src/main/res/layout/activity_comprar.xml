@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".comprar">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="393dp"
+        android:layout_height="693dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="376dp"
+                android:layout_height="245dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="72dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="101dp"
+                android:layout_marginEnd="36dp"
+                android:fontFamily="@font/angkor"
+                android:text="Precio:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvPrecio"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="111dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="101dp"
+                android:layout_marginEnd="108dp"
+                android:fontFamily="@font/angkor"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="111dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/angkor"
+                android:text="Seguro:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvSeguro"
+                app:layout_constraintHorizontal_bias="0.539"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/tvSeguro"
+                android:layout_width="111dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="108dp"
+                android:fontFamily="@font/angkor"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrecio" />
+
+            <TextView
+                android:id="@+id/tvCompra"
+                android:layout_width="196dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/angkor"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+
+            <Button
+                android:id="@+id/button_com"
+                android:layout_width="122dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="#9E7801"
+                android:text="Comprar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCompra" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/angkor"
+                android:text="total a pagar:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="111dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/angkor"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.136"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/tvSeguro" />
+
+            <Button
+                android:id="@+id/button_volm"
+                android:layout_width="122dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#9E7801"
+                android:text="Cancelar Compra"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_com"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCompra"
+                app:layout_constraintVertical_bias="0.187" />
+
+            <Spinner
+                android:id="@+id/spn2"
+                android:layout_width="343dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="36dp"
+                android:background="#FBFBFB"
+                app:layout_constraintBottom_toTopOf="@+id/tvPrecio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
